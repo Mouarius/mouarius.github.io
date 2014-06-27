@@ -1,0 +1,78 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+/* line 4, ../sass/_reset.scss */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* line 9, ../sass/_reset.scss */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+/* line 11, ../sass/style.scss */
+body {
+  height: 100%;
+}
+
+/* line 15, ../sass/style.scss */
+header {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* line 20, ../sass/style.scss */
+.page-title {
+  background-color: #d65002;
+  color: white;
+  font-size: 7em;
+  font-family: "bebasregular", sans-serif;
+  margin: 0;
+  padding-top: 1em;
+}
+
+/* line 29, ../sass/style.scss */
+.page-separator {
+  background: #393939;
+  font-size: 0;
+  height: 25px;
+}
+
+/* line 34, ../sass/style.scss */
+.content {
+  display: block;
+  height: auto;
+}
+
+/* line 39, ../sass/style.scss */
+.nav-custom-g {
+  height: 20em;
+  width: 100%;
+}
+
+/* line 44, ../sass/style.scss */
+.nav-custom-g-u {
+  box-sizing: border-box;
+  background: #f0cc00;
+  width: 50%;
+  min-height: 24em;
+  min-width: 24em;
+}
+/* line 51, ../sass/style.scss */
+.nav-custom-g-u p {
+  text-align: center;
+  display: block;
+  height: 16em;
+  width: 16em;
+  margin: 4em;
+}
+/* line 58, ../sass/style.scss */
+.nav-custom-g-u a {
+  height: 16em;
+  width: 16em;
+  text-decoration: none;
+  color: white;
+  font-size: 3em;
+  font-family: "bebasregular", sans-serif;
+}
