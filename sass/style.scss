@@ -2,11 +2,6 @@
 //http://colourco.de/none/%232f448e%2C%237597d1%2C%23f0cc00%2C%23fefffe
 @import "reset";
 
-$dark_blue : #2f448e;
-$light_blue : #7597d1;
-$yellow : #f0cc00;
-$orange_title: #d65002;
-$dark_grey: #393939;
 
 body{
     height: 100%;
@@ -32,36 +27,83 @@ header{
     height: 25px;
 }
 .content{
+    background: white;
         display: block;
-        height: auto;
 }
+//-----------------------------------------------------
+//                    CUSTOM BOX
+//-----------------------------------------------------
 
-.nav-custom-g{
-    height: 20em;
-    width: 100%;
-
-}
-.nav-custom-g-u{
+.custom-box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: $yellow;
-    width: 50%;
+    min-height: 10em;
+    text-align: center;
+    font-size: 3em;
+    font-family: "bebasregular", sans-serif;
+    padding-top: 3em;
+    -webkit-transition: background-color, 0.5s;
+    -moz-transition: background-color, 0.5s;
+    transition: background-color, 0.5s;
+    -webkit-transition: color, 0.5s;
+    -moz-transition: color, 0.5s;
+    transition: color, 0.5s;
+}
 
-        min-height: 24em;
-        min-width: 24em;
-    p{
-        text-align: center;
-        display: block;
-        height: 16em;
-        width: 16em;
-        margin: 4em;
-    }
-    a{
-        height: 16em;
-        width: 16em;
-        text-decoration: none;
-        color: white;
-        font-size: 3em;
-        font-family: "bebasregular", sans-serif;
+.custom-box-twitter{
+    background: $twitter;
+}
+.box-twitter:hover{
+    color: $twitter;
+}
 
-    }
+.custom-box-minecraft{
+    background: $minecraft;
+}
+.box-minecraft:hover{
+    color: $minecraft;
+}
+
+.custom-box-about{
+    background: $about;
+}
+.box-about:hover{
+    color: $about;
+}
+
+.custom-box-github{
+    background: $github;
+}
+.box-github:hover{
+    color: $github;
+}
+
+.custom-box-java{
+    background: $java;
+}
+.box-java:hover{
+    color: $java;
+}
+
+.custom-box-instagram{
+    background: $instagram;
+}
+.box-instagram:hover{
+    color: $instagram;
+}
+
+
+.custom-box:hover{
+    background: white;
+}
+span.box-logo{
+    display: block;
+    padding-top: 1em;
+    font-size: 2em;
+}
+
+
+footer{
+    display: block;
 }

@@ -1,5 +1,6 @@
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(http://weloveiconfonts.com/api/?family=zocial);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 /* line 4, ../sass/_reset.scss */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
@@ -10,21 +11,33 @@
   font-family: 'zocial', sans-serif;
 }
 
-/* line 11, ../sass/style.scss */
+/* fontawesome */
+/* line 15, ../sass/_reset.scss */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* line 30, ../sass/_reset.scss */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 6, ../sass/style.scss */
 body {
   height: 100%;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 header {
   width: 100%;
   display: block;
   height: auto;
 }
 
-/* line 20, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 .page-title {
-  background-color: #d65002;
+  background-color: #c44d07;
   color: white;
   font-size: 7em;
   font-family: "bebasregular", sans-serif;
@@ -32,47 +45,110 @@ header {
   padding-top: 1em;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .page-separator {
   background: #393939;
   font-size: 0;
   height: 25px;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .content {
+  background: white;
   display: block;
-  height: auto;
 }
 
-/* line 39, ../sass/style.scss */
-.nav-custom-g {
-  height: 20em;
-  width: 100%;
-}
-
-/* line 44, ../sass/style.scss */
-.nav-custom-g-u {
+/* line 37, ../sass/style.scss */
+.custom-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: #f0cc00;
-  width: 50%;
-  min-height: 24em;
-  min-width: 24em;
-}
-/* line 51, ../sass/style.scss */
-.nav-custom-g-u p {
+  min-height: 10em;
   text-align: center;
-  display: block;
-  height: 16em;
-  width: 16em;
-  margin: 4em;
-}
-/* line 58, ../sass/style.scss */
-.nav-custom-g-u a {
-  height: 16em;
-  width: 16em;
-  text-decoration: none;
-  color: white;
   font-size: 3em;
   font-family: "bebasregular", sans-serif;
+  padding-top: 3em;
+  -webkit-transition: background-color, 0.5s;
+  -moz-transition: background-color, 0.5s;
+  transition: background-color, 0.5s;
+  -webkit-transition: color, 0.5s;
+  -moz-transition: color, 0.5s;
+  transition: color, 0.5s;
+}
+
+/* line 54, ../sass/style.scss */
+.custom-box-twitter {
+  background: #4099ff;
+}
+
+/* line 57, ../sass/style.scss */
+.box-twitter:hover {
+  color: #4099ff;
+}
+
+/* line 61, ../sass/style.scss */
+.custom-box-minecraft {
+  background: #9ed704;
+}
+
+/* line 64, ../sass/style.scss */
+.box-minecraft:hover {
+  color: #9ed704;
+}
+
+/* line 68, ../sass/style.scss */
+.custom-box-about {
+  background: #68016b;
+}
+
+/* line 71, ../sass/style.scss */
+.box-about:hover {
+  color: #68016b;
+}
+
+/* line 75, ../sass/style.scss */
+.custom-box-github {
+  background: #8698ed;
+}
+
+/* line 78, ../sass/style.scss */
+.box-github:hover {
+  color: #8698ed;
+}
+
+/* line 82, ../sass/style.scss */
+.custom-box-java {
+  background: #f0cc00;
+}
+
+/* line 85, ../sass/style.scss */
+.box-java:hover {
+  color: #f0cc00;
+}
+
+/* line 89, ../sass/style.scss */
+.custom-box-instagram {
+  background: #bf4040;
+}
+
+/* line 92, ../sass/style.scss */
+.box-instagram:hover {
+  color: #bf4040;
+}
+
+/* line 97, ../sass/style.scss */
+.custom-box:hover {
+  background: white;
+}
+
+/* line 100, ../sass/style.scss */
+span.box-logo {
+  display: block;
+  padding-top: 1em;
+  font-size: 2em;
+}
+
+/* line 107, ../sass/style.scss */
+footer {
+  display: block;
 }

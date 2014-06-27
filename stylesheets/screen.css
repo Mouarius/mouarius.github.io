@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(http://weloveiconfonts.com/api/?family=zocial);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 /* line 4, ../sass/_reset.scss */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
@@ -12,4 +13,16 @@
 /* line 9, ../sass/_reset.scss */
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif;
+}
+
+/* fontawesome */
+/* line 15, ../sass/_reset.scss */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* line 30, ../sass/_reset.scss */
+a {
+  text-decoration: none;
+  color: white;
 }
