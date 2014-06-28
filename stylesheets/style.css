@@ -20,7 +20,6 @@
 /* line 30, ../sass/_reset.scss */
 a {
   text-decoration: none;
-  color: white;
 }
 
 /* line 6, ../sass/style.scss */
@@ -30,7 +29,7 @@ body {
 
 /* line 10, ../sass/style.scss */
 header {
-  width: 100%;
+  width: auto;
   display: block;
   height: auto;
 }
@@ -65,90 +64,100 @@ header {
   box-sizing: border-box;
   min-height: 10em;
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   font-family: "bebasregular", sans-serif;
   padding-top: 3em;
-  -webkit-transition: background-color, 0.5s;
-  -moz-transition: background-color, 0.5s;
-  transition: background-color, 0.5s;
-  -webkit-transition: color, 0.5s;
-  -moz-transition: color, 0.5s;
-  transition: color, 0.5s;
 }
 
-/* line 54, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .custom-box-twitter {
   background: #4099ff;
 }
 
-/* line 57, ../sass/style.scss */
-.box-twitter:hover {
+/* line 51, ../sass/style.scss */
+.custom-box-twitter:hover {
   color: #4099ff;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .custom-box-minecraft {
   background: #9ed704;
 }
 
-/* line 64, ../sass/style.scss */
-.box-minecraft:hover {
+/* line 58, ../sass/style.scss */
+.custom-box-minecraft:hover {
   color: #9ed704;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .custom-box-about {
   background: #68016b;
 }
 
-/* line 71, ../sass/style.scss */
-.box-about:hover {
+/* line 65, ../sass/style.scss */
+.custom-box-about:hover {
   color: #68016b;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .custom-box-github {
   background: #8698ed;
 }
 
-/* line 78, ../sass/style.scss */
-.box-github:hover {
+/* line 72, ../sass/style.scss */
+.custom-box-github:hover {
   color: #8698ed;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .custom-box-java {
   background: #f0cc00;
 }
 
-/* line 85, ../sass/style.scss */
-.box-java:hover {
+/* line 79, ../sass/style.scss */
+.custom-box-java:hover {
   color: #f0cc00;
 }
 
-/* line 89, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .custom-box-instagram {
   background: #bf4040;
 }
 
-/* line 92, ../sass/style.scss */
-.box-instagram:hover {
+/* line 86, ../sass/style.scss */
+.custom-box-instagram:hover {
   color: #bf4040;
 }
 
-/* line 97, ../sass/style.scss */
-.custom-box:hover {
-  background: white;
+/* line 91, ../sass/style.scss */
+.box {
+  -webkit-transition: color, 0.5s;
+  -moz-transition: color, 0.5s;
+  transition: color, 0.5s;
+  -webkit-transition: background-color, 0.5s;
+  -moz-transition: background-color, 0.5s;
+  transition: background-color, 0.5s;
+  color: white;
 }
 
 /* line 100, ../sass/style.scss */
+.box:hover {
+  background: white;
+}
+
+/* line 103, ../sass/style.scss */
 span.box-logo {
   display: block;
   padding-top: 1em;
   font-size: 2em;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
+.is-activated {
+  clear: both;
+}
+
+/* line 112, ../sass/style.scss */
 footer {
   display: block;
 }

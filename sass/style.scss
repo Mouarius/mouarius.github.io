@@ -8,7 +8,7 @@ body{
 }
 
 header{
-    width: 100%;
+    width: auto;
     display: block;
     height: auto;
 }
@@ -40,61 +40,64 @@ header{
     box-sizing: border-box;
     min-height: 10em;
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
     font-family: "bebasregular", sans-serif;
     padding-top: 3em;
-    -webkit-transition: background-color, 0.5s;
-    -moz-transition: background-color, 0.5s;
-    transition: background-color, 0.5s;
-    -webkit-transition: color, 0.5s;
-    -moz-transition: color, 0.5s;
-    transition: color, 0.5s;
 }
 
 .custom-box-twitter{
-    background: $twitter;
+    background: $twitter_color;
 }
-.box-twitter:hover{
-    color: $twitter;
+.custom-box-twitter:hover{
+    color: $twitter_color;
 }
 
 .custom-box-minecraft{
-    background: $minecraft;
+    background: $minecraft_color;
 }
-.box-minecraft:hover{
-    color: $minecraft;
+.custom-box-minecraft:hover{
+    color: $minecraft_color;
 }
 
 .custom-box-about{
-    background: $about;
+    background: $about_color;
 }
-.box-about:hover{
-    color: $about;
+.custom-box-about:hover{
+    color: $about_color;
 }
 
 .custom-box-github{
-    background: $github;
+    background: $github_color;
 }
-.box-github:hover{
-    color: $github;
+.custom-box-github:hover{
+    color: $github_color;
 }
 
 .custom-box-java{
-    background: $java;
+    background: $java_color;
 }
-.box-java:hover{
-    color: $java;
+.custom-box-java:hover{
+    color: $java_color;
 }
 
 .custom-box-instagram{
-    background: $instagram;
+    background: $instagram_color;
 }
-.box-instagram:hover{
-    color: $instagram;
+.custom-box-instagram:hover{
+    color: $instagram_color;
+    
 }
 
-
-.custom-box:hover{
+.box{
+    -webkit-transition: color, 0.5s;
+    -moz-transition: color, 0.5s;
+    transition: color, 0.5s;
+    -webkit-transition: background-color, 0.5s;
+    -moz-transition: background-color, 0.5s;
+    transition: background-color, 0.5s;
+    color: white;
+}
+.box:hover{
     background: white;
 }
 span.box-logo{
@@ -102,7 +105,9 @@ span.box-logo{
     padding-top: 1em;
     font-size: 2em;
 }
-
+.is-activated{
+    clear: both;
+}
 
 footer{
     display: block;

@@ -15,12 +15,12 @@
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
 }
-$instagram: #bf4040;
-$twitter: rgb(64,153,255);
-$about: #68016b;
-$github: #8698ed;
-$minecraft: #9ed704;
-$java : #f0cc00;
+$java_color: #f0cc00;
+$instagram_color: #bf4040;
+$twitter_color: rgb(64,153,255);
+$about_color: #68016b;
+$github_color: #8698ed;
+$minecraft_color: #9ed704;
 
 $dark_grey: #393939;
 $dark_blue : #2f448e;
@@ -29,5 +29,4 @@ $orange_title: #c44d07;
 
 a{
     text-decoration: none;
-    color: white;
 }
