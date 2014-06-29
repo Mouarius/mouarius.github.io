@@ -21,7 +21,56 @@
   font-family: 'FontAwesome', sans-serif;
 }
 
-/* line 30, ../sass/_reset.scss */
+/* line 29, ../sass/_reset.scss */
+body {
+  font-size: 100%;
+}
+
+/* line 32, ../sass/_reset.scss */
 a {
   text-decoration: none;
+}
+
+@-webkit-keyframes animationActivated {
+  /* line 37, ../sass/_reset.scss */
+  0% {
+    padding-top: 3em;
+  }
+
+  /* line 40, ../sass/_reset.scss */
+  25% {
+    margin: auto;
+  }
+
+  /* line 43, ../sass/_reset.scss */
+  50% {
+    padding-top: 1em;
+  }
+
+  /* line 46, ../sass/_reset.scss */
+  100% {
+    padding-bottom: 20em;
+  }
+}
+
+@keyframes animationActivated {
+  /* line 51, ../sass/_reset.scss */
+  0% {
+    padding-top: 3em;
+  }
+
+  /* line 54, ../sass/_reset.scss */
+  25% {
+    margin: auto;
+  }
+
+  /* line 57, ../sass/_reset.scss */
+  50% {
+    padding-top: 1em;
+  }
+
+  /* line 60, ../sass/_reset.scss */
+  100% {
+    padding-bottom: 20em;
+  }
 }

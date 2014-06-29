@@ -17,24 +17,68 @@
   font-family: 'FontAwesome', sans-serif;
 }
 
-/* line 30, ../sass/_reset.scss */
+/* line 29, ../sass/_reset.scss */
+body {
+  font-size: 100%;
+}
+
+/* line 32, ../sass/_reset.scss */
 a {
   text-decoration: none;
 }
 
-/* line 6, ../sass/style.scss */
-body {
-  height: 100%;
+@-webkit-keyframes animationActivated {
+  /* line 37, ../sass/_reset.scss */
+  0% {
+    padding-top: 3em;
+  }
+
+  /* line 40, ../sass/_reset.scss */
+  25% {
+    margin: auto;
+  }
+
+  /* line 43, ../sass/_reset.scss */
+  50% {
+    padding-top: 1em;
+  }
+
+  /* line 46, ../sass/_reset.scss */
+  100% {
+    padding-bottom: 20em;
+  }
 }
 
-/* line 10, ../sass/style.scss */
+@keyframes animationActivated {
+  /* line 51, ../sass/_reset.scss */
+  0% {
+    padding-top: 3em;
+  }
+
+  /* line 54, ../sass/_reset.scss */
+  25% {
+    margin: auto;
+  }
+
+  /* line 57, ../sass/_reset.scss */
+  50% {
+    padding-top: 1em;
+  }
+
+  /* line 60, ../sass/_reset.scss */
+  100% {
+    padding-bottom: 20em;
+  }
+}
+
+/* line 5, ../sass/style.scss */
 header {
   width: auto;
   display: block;
   height: auto;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 .page-title {
   background-color: #c44d07;
   color: white;
@@ -44,20 +88,45 @@ header {
   padding-top: 1em;
 }
 
-/* line 24, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 .page-separator {
   background: #393939;
   font-size: 0;
   height: 25px;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .content {
   background: white;
   display: block;
 }
 
-/* line 37, ../sass/style.scss */
+@media screen and (min-width: 10em) {
+  /* line 29, ../sass/style.scss */
+  .page-title {
+    width: 100%;
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 36, ../sass/style.scss */
+  .page-title {
+    width: 100%;
+    font-size: 5em;
+  }
+}
+@media screen and (min-width: 830px) {
+  /* line 42, ../sass/style.scss */
+  .page-title {
+    background-color: #c44d07;
+    color: white;
+    font-size: 7em;
+    font-family: "bebasregular", sans-serif;
+    margin: 0;
+    padding-top: 1em;
+  }
+}
+/* line 57, ../sass/style.scss */
 .custom-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -69,67 +138,67 @@ header {
   padding-top: 3em;
 }
 
-/* line 48, ../sass/style.scss */
-.custom-box-twitter {
+/* line 68, ../sass/style.scss */
+.custom-box-twitter, .box.is-activated:hover {
   background: #4099ff;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .custom-box-twitter:hover {
   color: #4099ff;
 }
 
-/* line 55, ../sass/style.scss */
-.custom-box-minecraft {
+/* line 75, ../sass/style.scss */
+.custom-box-minecraft, .box.is-activated:hover {
   background: #9ed704;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .custom-box-minecraft:hover {
   color: #9ed704;
 }
 
-/* line 62, ../sass/style.scss */
-.custom-box-about {
+/* line 82, ../sass/style.scss */
+.custom-box-about, .box.is-activated:hover {
   background: #68016b;
 }
 
-/* line 65, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .custom-box-about:hover {
   color: #68016b;
 }
 
-/* line 69, ../sass/style.scss */
-.custom-box-github {
+/* line 89, ../sass/style.scss */
+.custom-box-github, .box.is-activated:hover {
   background: #8698ed;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .custom-box-github:hover {
   color: #8698ed;
 }
 
-/* line 76, ../sass/style.scss */
-.custom-box-java {
+/* line 96, ../sass/style.scss */
+.custom-box-java, .box.is-activated:hover {
   background: #f0cc00;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .custom-box-java:hover {
   color: #f0cc00;
 }
 
-/* line 83, ../sass/style.scss */
-.custom-box-instagram {
+/* line 103, ../sass/style.scss */
+.custom-box-instagram, .box.is-activated:hover {
   background: #bf4040;
 }
 
-/* line 86, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .custom-box-instagram:hover {
   color: #bf4040;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .box {
   -webkit-transition: color, 0.5s;
   -moz-transition: color, 0.5s;
@@ -140,24 +209,19 @@ header {
   color: white;
 }
 
-/* line 100, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .box:hover {
   background: white;
 }
 
-/* line 103, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 span.box-logo {
   display: block;
   padding-top: 1em;
   font-size: 2em;
 }
 
-/* line 108, ../sass/style.scss */
-.is-activated {
-  clear: both;
-}
-
-/* line 112, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 footer {
   display: block;
 }

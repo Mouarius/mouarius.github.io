@@ -26,7 +26,38 @@ $dark_grey: #393939;
 $dark_blue : #2f448e;
 $orange_title: #c44d07;
 
-
+body{
+    font-size: 100%;
+}
 a{
     text-decoration: none;
+}
+
+@-webkit-keyframes animationActivated{
+    0%{
+        padding-top: 3em;
+    }
+    25%{
+        margin: auto;
+    }
+    50%{
+        padding-top: 1em;
+    }
+    100%{
+        padding-bottom: 20em;
+    }
+}
+@keyframes animationActivated{
+    0%{
+        padding-top: 3em;
+    }
+    25%{
+        margin: auto;
+    }
+    50%{
+        padding-top: 1em;
+    }
+    100%{
+        padding-bottom: 20em;
+    }
 }

@@ -2,11 +2,6 @@
 //http://colourco.de/none/%232f448e%2C%237597d1%2C%23f0cc00%2C%23fefffe
 @import "reset";
 
-
-body{
-    height: 100%;
-}
-
 header{
     width: auto;
     display: block;
@@ -30,6 +25,31 @@ header{
     background: white;
         display: block;
 }
+@media screen and (min-width: 10em){
+    .page-title{
+        width: 100%;
+        font-size: 4em;
+    }
+
+}
+@media screen and (min-width: 600px){
+    .page-title{
+        width: 100%;
+        font-size: 5em;
+    }
+}
+@media screen and (min-width: 830px){
+    .page-title {
+    background-color: $orange_title;
+    color: white;
+    font-size: 7em;
+    font-family: "bebasregular", sans-serif;
+    margin: 0;
+    padding-top: 1em;
+
+}
+
+}
 //-----------------------------------------------------
 //                    CUSTOM BOX
 //-----------------------------------------------------
@@ -45,42 +65,42 @@ header{
     padding-top: 3em;
 }
 
-.custom-box-twitter{
+.custom-box-twitter, .box.is-activated:hover{
     background: $twitter_color;
 }
 .custom-box-twitter:hover{
     color: $twitter_color;
 }
 
-.custom-box-minecraft{
+.custom-box-minecraft, .box.is-activated:hover{
     background: $minecraft_color;
 }
 .custom-box-minecraft:hover{
     color: $minecraft_color;
 }
 
-.custom-box-about{
+.custom-box-about, .box.is-activated:hover{
     background: $about_color;
 }
 .custom-box-about:hover{
     color: $about_color;
 }
 
-.custom-box-github{
+.custom-box-github, .box.is-activated:hover{
     background: $github_color;
 }
 .custom-box-github:hover{
     color: $github_color;
 }
 
-.custom-box-java{
+.custom-box-java, .box.is-activated:hover{
     background: $java_color;
 }
 .custom-box-java:hover{
     color: $java_color;
 }
 
-.custom-box-instagram{
+.custom-box-instagram, .box.is-activated:hover{
     background: $instagram_color;
 }
 .custom-box-instagram:hover{
@@ -104,9 +124,6 @@ span.box-logo{
     display: block;
     padding-top: 1em;
     font-size: 2em;
-}
-.is-activated{
-    clear: both;
 }
 
 footer{
