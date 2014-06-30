@@ -139,7 +139,7 @@ header {
 }
 
 /* line 68, ../sass/style.scss */
-.custom-box-twitter, .box.is-activated:hover {
+.custom-box-twitter {
   background: #4099ff;
 }
 
@@ -149,7 +149,7 @@ header {
 }
 
 /* line 75, ../sass/style.scss */
-.custom-box-minecraft, .box.is-activated:hover {
+.custom-box-minecraft {
   background: #9ed704;
 }
 
@@ -159,7 +159,7 @@ header {
 }
 
 /* line 82, ../sass/style.scss */
-.custom-box-about, .box.is-activated:hover {
+.custom-box-about {
   background: #68016b;
 }
 
@@ -169,7 +169,7 @@ header {
 }
 
 /* line 89, ../sass/style.scss */
-.custom-box-github, .box.is-activated:hover {
+.custom-box-github {
   background: #8698ed;
 }
 
@@ -179,7 +179,7 @@ header {
 }
 
 /* line 96, ../sass/style.scss */
-.custom-box-java, .box.is-activated:hover {
+.custom-box-java {
   background: #f0cc00;
 }
 
@@ -189,7 +189,7 @@ header {
 }
 
 /* line 103, ../sass/style.scss */
-.custom-box-instagram, .box.is-activated:hover {
+.custom-box-instagram {
   background: #bf4040;
 }
 

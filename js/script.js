@@ -10,6 +10,10 @@ $(document).ready(function(){
         var hasClass = $(this).hasClass("is-activated")
         if(hasClass){
             $(".pure-u-1").show();
+            $(this).animate({
+                width: "33.3333%",
+                paddingBottom: "0"
+            }, 500);
             $(this).css("width","33.3333%");
         }
         else{
@@ -23,7 +27,6 @@ $(document).ready(function(){
             }, 500);
         }
         $(this).toggleClass("is-activated");
-        $(this).toggleClass("box");
         
         
     });
